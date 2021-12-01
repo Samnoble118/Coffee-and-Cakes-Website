@@ -1,0 +1,166 @@
+*{
+    background-color: #6F2A3B;
+    text-align: center;
+    align-items: center;
+    font-family: 'Yuji Boku', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+    
+.header{
+    
+    margin: 20px 400px;
+    font-weight: bolder;
+    font-style: italic;
+}
+.logo {
+    background-color: #6C4427;
+   
+}
+
+.coffee-icon{
+    height: 30px;
+}
+
+.coffee-banner{
+    height: 500px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #3E0F1B;
+}
+
+.nav-logo{
+    color: #C3B9B5;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+    background-color: #C3B9B5;
+}
+.nav-logo img{
+    height: 30px;
+    justify-content: center;
+    background-color: #C3B9B5;
+    
+}
+.nav-logo img:hover{
+    background-color: #6C4427;
+
+}
+
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    background-color: #3E0F1B;
+}
+.nav-links li{
+    list-style: none;
+    background-color: #C3B9B5;
+}
+.nav-links a{
+    color: #6C4427;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #C3B9B5;
+}
+
+.nav-links a:hover{
+    color: #C3B9B5;
+    background-color: #6C4427;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .appContainer{
+        overflow-x: hidden;
+        position: relative;
+    } 
+
+    .nav-links{
+       position: absolute;
+       right: 0px;
+       height: 92vh; 
+       top: 8vh;
+       background-color: rgba(255, 208, 0, 0.883);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 50%;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* .carousel-main{
+    padding: 0px 10px 10px 10px;
+    
+} */
+
+/* .cup{
+    background-image: url(Images/Nero.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.card-title{
+    font-style: italic;
+    background-color: #ff9933;
+}
+
+.footer{
+    background-color: black;
+}
